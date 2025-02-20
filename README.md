@@ -1,5 +1,55 @@
 # ELF Format Cheatsheet
 
+
+
+```
+ELF Header:
+  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             02
+  Data:                              01
+  Version:                           01
+  OS/ABI:                            00
+  ABI Version:                       00
+  Type:                              0003
+  Machine:                           003e
+  Version:                           00000001
+  Entry point address:               0000000000001130
+  Start of program headers:         0000000000000040
+  Start of section headers:         00000000000038a8
+  Flags:                             00000000
+  Size of this header:               0040
+  Size of program headers:           0038
+  Number of program headers:         000e
+  Size of section headers:           0040
+  Number of section headers:         001e
+  Section header string table index: 001d
+Program Headers:
+  Header 0:
+    Type:   00000006
+    Flags:  00000004
+    Offset: 0000000000000040
+    VAddr:  0000000000000040
+    PAddr:  0000000000000040
+    FileSz: 0000000000000310
+    MemSz:  0000000000000310
+    Align:  0000000000000008
+  Header 1:
+    Type:   00000003
+    Flags:  00000004
+    Offset: 00000000000003b4
+    VAddr:  00000000000003b4
+    PAddr:  00000000000003b4
+    FileSz: 000000000000001c
+    MemSz:  000000000000001c
+    Align:  0000000000000001
+  Header 2:
+    Type:   00000001
+    Flags:  00000004
+    Offset: 0000000000000000
+....
+```
+
+
 ## Introduction
 
 Executable and Linkable Format (ELF), is the default binary format on Linux-based systems.
